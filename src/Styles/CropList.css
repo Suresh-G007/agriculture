@@ -1,0 +1,147 @@
+/* CropListApp.css */
+.crop-list-app {
+    text-align: center;
+  }
+  
+  .header-list {
+    background-color: #4caf50; /* Green color */
+    color: #fff; /* White text */
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .footer {
+    background-color: #4caf50; /* Green color */
+    color: #fff; /* White text */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .crop-header{
+    margin-top: 50px;
+  }
+  .search{
+    margin-top: 50px;
+    width: 80%;
+  }
+  .add-card {
+    float: right;
+    /* or use flexbox to align to the end */
+    /* display: flex;
+    justify-content: flex-end; */
+  }
+  
+  .crop-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 16px;
+    margin-bottom: 100px;
+  }
+
+  .card-container {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 100px;
+  
+    /* Set columns to 1fr when there's only one card */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  
+  /* Set columns to 1fr when there's only one card */
+  .card-container:only-child {
+    grid-template-columns: 1fr;
+  }
+  
+  
+  .crop-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .crop-name{
+    text-align: center;
+    padding-bottom: 1px;
+  }
+  
+  .crop-card img {
+    width: 200px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+}
+
+  
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer{
+    font-size: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+
+/* CropList.css */
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+
+.pagination__link {
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pagination__link--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination__link--active {
+  background-color: #4caf50;
+  color: #fff;
+  border: 1px solid #4caf50;
+}

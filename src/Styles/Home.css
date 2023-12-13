@@ -1,0 +1,88 @@
+/* Home.css */
+.home-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1; /* Takes remaining space in the container */
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+.header-home {
+  background-color: #4caf50; /* Green color */
+  color: #fff; /* White text */
+  padding: 10px;
+  text-align: center;
+  
+  
+}
+
+.logo {
+  max-height: 50px; /* Set a suitable max height for your logo */
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.settings {
+  margin-left: auto; /* Push the settings to the right */
+}
+
+.login-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .settings {
+    margin: 10px 0;
+  }
+  
+.main-content {
+  flex: 1; /* Takes remaining space in the container */
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+  .login-button {
+    margin-top: 10px; /* Adjust the margin as needed for smaller screens */
+  }
+  .footer{
+    font-size: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: #4caf50; /* Green color */
+  color: #fff; /* White text */
+  padding: 10px;
+  position: fixed;
+  bottom: 10px; 
+  text-align: center;
+}
+
